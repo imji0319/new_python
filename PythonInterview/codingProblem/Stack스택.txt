@@ -1,0 +1,21 @@
+2020.11.27 
+
+9장 스택 Stack
+
+Stack : LIFO : Last In First Out
+* Queue : FIFO : First In First Out 
+
+
+push() : 요소를 컬렉션에 추가
+pop() : 아직 제거되지 않은 가장 최근에 삽입된 요소 삭제 
+
+
+Stack Buffer Overflow : 꽉 찬 스택에 요소를 삽입하고자 할 때 스택 내 요소가 많이 에러가 발생함 
+
+스택 추상 자료형 Abstract Data type 
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+
+
+# 해당 확장자 제외 
+*.csv
+
+
+#
+
+/DS_Series/DS_ML_guide/data/creditcard.csv

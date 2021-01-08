@@ -1,0 +1,21 @@
+
+
+Deque 데크 Double Ended Queue
+글자 그대로 양쪽 끝을 모두 추출할 수 있는, 큐을 일반화한 형태의 추상자료형(ADT)
+
+
+
+from typing import Deque 
+from collections import deque()
+
+양방향에서 데이터를 처리할 수 있는 queue형 자료 구조 
+
+
+
+파이썬의 데크는 이중 연결 리스트 구조로 양쪽 방향 모두 추출하는데 시간복잡도 O(1)에 실행
+(팰린드롬 처럼 양끝을 확인해야 하는 경우 매우 효율적인 구조 )
+
+
+
+출처 : https://excelsior-cjh.tistory.com/96
+

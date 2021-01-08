@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 27 17:25:25 2020
+
+@author: jihye
+"""
+
+# 큐를 이용해 스택을 구현하라
+# 연산 기능 : push(), pop(), top(), empty()
+
+
+class MyStack():
+    def __init__(self):
+        import collections 
+        self.q = collections.deque()
+        
+    def push(self, x):
+        self.q.append(x)
+        
+        # 요소 삽입 후 맨 앞에 두는 상태로 재정렬 
+        for _ in range(len(self.q)-1):
+            self.q.append(self.q.popleft()) 
+    
+    def pop(self):
+        return self.q.popleft()
+    
+    def top(self):
+        return self.q[0]
+    
+    def empty(self):
+        return len(self.q) == 0
+        
+    
+
+stack = MyStack()
+
+stack.push(1)
+stack.push(2)
+
+print(stack.top())
+print(stack.pop())
+print(stack.empty())
+
+        
+        
+
+
+
+
