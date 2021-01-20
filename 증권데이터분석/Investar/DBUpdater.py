@@ -8,11 +8,14 @@ Created on Wed Jan 20 18:18:40 2021
 
 # Investar/DBUpdater.py
 
+import pymysql
 
 class DBUpdater:
     
     def __init__(self):
         """생성자 : MariaDB 연결 및 종목코드 딕셔너리 생성 """
+        
+        
         
         
     def __del__(self):
