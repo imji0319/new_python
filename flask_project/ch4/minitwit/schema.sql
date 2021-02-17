@@ -1,14 +1,13 @@
 drop table if exists user;
-
 create table user(
     user_id integer primary key autoincrement,
-    user_name string not null,
+    username string not null,
     email string not null,
     pw_hash string not null
 );
 
-drop table if exists followers;
-create table followers(
+drop table if exists follower;
+create table follower(
     who_id integer,
     whom_id integer
 );
