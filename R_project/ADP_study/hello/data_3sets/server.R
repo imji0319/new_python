@@ -46,9 +46,9 @@ shinyServer(function(input, output){
   })
   
   # table
-  output$table <- renderDataTable({
-    datasetInput()}, 
-    options =list(iDisplayLenght = 5))
+  output$table <- renderTable({
+    head(datasetInput(), n = input$obs)
+  })
   
 })
   
