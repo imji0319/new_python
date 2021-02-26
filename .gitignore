@@ -5,6 +5,9 @@
 *.xls
 *.xlsx
 *.tsv
+*.h5
+
+
 
 #해당 폴더 제외
 event/
