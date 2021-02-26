@@ -1,39 +1,30 @@
 # ui.R
 
 
-# Diamonds + mtcars + iris datatable tap 
-# 각 데이터 별 변수 선택 -> boxplot reactivity plot 
-# 상단 plot , 하단 dataset
+# sidebar : Diamonds + mtcars + iris dataset 선택 
+# 각 3개 탭 생성 : dataTableOutput, renderPlot, summary 
 
-# 1. 3개 탭 만들기 
+
+# 1. sidebar
 library(shiny)
 shinyUI(pageWithSidebar(
   
   headerPanel("3 dataset Boxplot"),
   
   sidebarPanel(
-    checkboxGroupInput('show_vars', 'Columns in diamonds to show : ', names(diamonds),
-                       selected = names(diamonds)),
+    selectInput('dataset', "Choose a dataset",
+                choices = c('diamonds','mtcars','iris')),
+    numericInput("obs", "Number of observations to view : ", 10),
     
-    helpText('For the diamonds data, we can select variables to show in the table; 
-             for the mtcars example, we use bSortClasses = TRUE 
-             so that sorted columns are colored since they have special CSS classes attached ; 
-             for the iris data, we customize the length menu so we can display 5 rows per page')
-    
-    
+    submitButton("Update View")
+
   ),
   
   mainPanel(
     tabsetPanel(
-      tabPanel("Diamonds", 
-               plotOutput('dia_plot'),
-               dataTableOutput('dia_data')),
-      tabPanel("mtcars",
-               plotOutput('mt_plot'),
-               dataTableOutput('mt_data')),
-      tabPanel("iris",
-               plotOutput('iris_plot'),
-               dataTableOutput('iris_data'))
+      tabPanel("Plot", plotOutput("plot")), 
+      tabPanel("Summary", verbatimTextOutput("summary")),
+      tabPanel("Table", dataTableOutput('table'))
     
   ))
   

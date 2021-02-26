@@ -2,19 +2,55 @@
 
 library('shiny')
 shinyServer(function(input, output){
+
   
-  
-  
-  # Data Table
-  output$dia_data <- renderDataTable({
-    library(ggplot2)
-    diamonds[, input$show_vars, drop = FALSE]
+  # dataset 
+  datasetInput <- reactive({
+    switch(input$dataset,
+           "diamonds" = diamonds,
+           "mtcars" = mtcars,
+           "iris" = iris)
   })
   
-  output$mt_data <- renderDataTable({
-    mtcars}, options = list(bSortClasses = TRUE))
+  library(ggplot2)
+  library(dplyr)
   
-  output$iris_data <- renderDataTable({
-    iris}, options = list(aLengthMenu = c(5,30,50), iDisplayLength = 5))
+  data(diamonds)
+  data(iris)
+  data(mtcars)
+  
+  
+  output$plot <- renderPlot({
+    dataset <- datasetInput()
+    
+    if (isTRUE(all_equal(dataset, diamonds))) {
+      qplot(cut, price, data = diamonds, geom ='boxplot')
+      
+    } else if (isTRUE(all_equal(dataset, mtcars))){
+      qplot(wt, mpg, data = mtcars)
+      
+    } else if (all_equal(dataset, iris)){
+      ggplot(data = iris, aes(Sepal.Length, Sepal.Width))  + geom_point()
+    }
+    
+  })
+  
+    
+  
+
+  
+  
+  # summary
+  output$summary <- renderPrint({
+    summary(datasetInput())
+  })
+  
+  # table
+  output$table <- renderDataTable({
+    datasetInput()}, 
+    options =list(iDisplayLenght = 5))
   
 })
+  
+
+
