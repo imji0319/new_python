@@ -6,6 +6,7 @@
 *.xlsx
 *.tsv
 *.h5
+*.npy
 
 
 
