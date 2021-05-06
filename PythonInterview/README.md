@@ -199,9 +199,9 @@ __다이나믹 프로그래밍__
 
 __카카오 공채 문제 풀이__
 
-89. 비밀 지도
-90. 다트 게임
-91. 캐시
+89. [비밀 지도](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/secretmap.py)
+90. [다트 게임](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/dartgame.py)
+91. [캐시](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/LRU.py)
 92. 셔틀 버스
 93. 뉴스 클러스터링
 94. 프렌즈 4블록
