@@ -202,10 +202,10 @@ __카카오 공채 문제 풀이__
 89. [비밀 지도](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/secretmap.py)
 90. [다트 게임](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/dartgame.py)
 91. [캐시](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/LRU.py)
-92. 셔틀 버스
-93. 뉴스 클러스터링
-94. 프렌즈 4블록
-95. 추석 트래핑 
+92. [셔틀 버스](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/shuttleBus.py)
+93. [뉴스 클러스터링](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/newClustering.py)
+94. [프렌즈 4블록](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/friendsBlock.py)
+95. [추석 트래픽](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/traffic.py) 
 
 ------------------
 
