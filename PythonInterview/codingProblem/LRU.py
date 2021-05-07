@@ -25,7 +25,7 @@ def solution(cachesize : int , cities : List[str]) -> int  :
             cache.append(c)
             elapsed +=5
 
-    return elapsed 
+    return elapsed
 
 
 
