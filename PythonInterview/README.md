@@ -84,9 +84,9 @@ __그래프__
 32. [섬의 개수](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/NumberOfIslands.py)
 33. [전화 번호 문자 조합](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/LetterCombinationsOfPhoneNumber.py)
 34. [순열](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/Permutations.py)
-35. 조합
-36. 조합의 합
-37. 부분 집합
+35. [조합](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/Combinations.py)
+36. [조합의 합](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/CombinationSum.py)
+37. [부분 집합](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/Subset.py)
 38. 일정 재구성
 39. 코스 스케줄
 
