@@ -87,8 +87,8 @@ __그래프__
 35. [조합](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/Combinations.py)
 36. [조합의 합](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/CombinationSum.py)
 37. [부분 집합](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/Subset.py)
-38. 일정 재구성
-39. 코스 스케줄
+38. [일정 재구성](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/Reconstruct_Itinerary.py)
+39. [코스 스케줄](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/CourseSchedule.py)
 
 ------------
 
