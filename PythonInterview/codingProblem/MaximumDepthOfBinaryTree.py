@@ -38,4 +38,19 @@ def maxDepth(root : TreeNode) -> int :
 
 
 
+if __name__ == "__main__":
+    root = TreeNode(3)
+    root.left = TreeNode(9)
+    root.right = TreeNode(20)
+    lnode = root.left
+    rnode = root.right
+    lnode.left = None
+    lnode.right = None
+    rnode.left = TreeNode(15)
+    rnode.right = TreeNode(7)
+
+
+    print(maxDepth(root))
+
+
 
