@@ -103,8 +103,8 @@ __트리__
 
 42. [이진 트리의 최대 깊이](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/MaximumDepthOfBinaryTree.py)
 43. [이진 트리의 직경](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/DiameterOfBinaryTree.py)
-44. 가장 긴 동일 값의 경로
-45. 이진 트리 반전
+44. [가장 긴 동일 값의 경로](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/LongestUnivaluePath.py)
+45. [이진 트리 반전](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/InvertBinaryTree.py)
 46. 두 이진 트리 병합
 47. 이진 트리 직렬화 & 역직렬화
 48. 균형 이진 트리
