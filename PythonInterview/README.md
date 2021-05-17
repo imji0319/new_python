@@ -105,9 +105,9 @@ __트리__
 43. [이진 트리의 직경](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/DiameterOfBinaryTree.py)
 44. [가장 긴 동일 값의 경로](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/LongestUnivaluePath.py)
 45. [이진 트리 반전](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/InvertBinaryTree.py)
-46. 두 이진 트리 병합
+46. [두 이진 트리 병합](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/MergeTwoBinaryTrees.py)
 47. 이진 트리 직렬화 & 역직렬화
-48. 균형 이진 트리
+48. [균형 이진 트리](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/BalancedBinaryTree.py)
 49. 최소 높이 트리
 50. 정렬된 배열의 이진 탐색 트리 변환
 51. 이진 탐색 트리(BST)를 더 큰 수 합계 트리로
@@ -119,8 +119,9 @@ __트리__
 
 __힙__
 
-55. 배열의 K번째 큰 요소
+55. [배열의 K번째 큰 요소](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/KthLargestElement.py)
 
+[이진 힙 구현](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/HEAP.py)
 -------------
 
 __트라이__
