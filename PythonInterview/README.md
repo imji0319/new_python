@@ -122,6 +122,8 @@ __힙__
 55. [배열의 K번째 큰 요소](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/KthLargestElement.py)
 
 [이진 힙 구현](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/HEAP.py)
+
+
 -------------
 
 __트라이__
@@ -130,6 +132,8 @@ __트라이__
 57. 팰린드롬 페어
 
 ------------
+
+### 알고리즘
 
 [__정렬__](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/sorting.py)
 
