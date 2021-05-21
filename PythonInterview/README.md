@@ -126,15 +126,15 @@ __힙__
 
 __트라이__
 
-56. 트라이 구현 
+56. [트라이 구현](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/ImplemenTrie.py)
 57. 팰린드롬 페어
 
 ------------
 
-__정렬__
+[__정렬__](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/sorting.py)
 
-58. 리스트 정렬 
-59. 구간 병합 
+58. [리스트 정렬](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/SortList.py)
+59. [구간 병합](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/MergeInterval.py)
 60. 삽입 정렬 리스트 
 61. 가장 큰 수 
 62. 유효한 애너그램 
