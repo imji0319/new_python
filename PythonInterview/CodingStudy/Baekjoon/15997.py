@@ -12,27 +12,24 @@ for i in range(6):
 
     case = list(map(float, case))
 
-    if case[1] < max(case[0], case[2]):
-        if case[0] > case[2]:
-            teams[A] +=3
-        elif case[0] < case[2]:
-            teams[B] +=3
-    else :
-        teams[A] += 1
-        teams[B] += 1
+    teams[A] += case[0]*3 + case[1]*1 # 기댓값
+    teams[B] += case[1]*1 + case[2]*3 # 기댓값
+
+
+print(teams)
 
 from collections import Counter
 
 c = Counter(teams.values())
 idv = {key: rank for rank, key in enumerate(sorted(c, reverse =True))}
-print(c) # 점수 개수
-print(idv) # 점수 순위
+#print(c) # 점수 개수
+#print(idv) # 점수 순위
 for k, v in teams.items():
     teams[k] = idv[v]
 
 c1 = Counter(teams.values())
-print(c1)
-print(teams)
+#print(c1)
+#print(teams)
 
 
 for k, v in teams.items():
