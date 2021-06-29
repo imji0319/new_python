@@ -14,7 +14,7 @@ def solution(points, K):
     result = []
 
     for _ in range(K):
-        (dist, x, y) = heapq.heappop(heap) # 맨앞부터 pop 
+        (dist, x, y) = heapq.heappop(heap) # 맨앞부터 pop
         result.append((x,y))
 
     return result
