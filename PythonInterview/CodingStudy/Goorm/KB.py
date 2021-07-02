@@ -8,9 +8,7 @@ ATM기계 인출금 알고리즘
 '''
 
 user_input = input().split()
-
 curr = int(user_input[1])
-
 for _ in range(int(user_input[0])):
 
     m = int(input())
@@ -24,15 +22,12 @@ for _ in range(int(user_input[0])):
 
 print(curr)
 
-
-
-
 '''
-for _ in range(int(user_input[0])):
+N,money = map(int,input().split())
+for _ in range(N):
     m = int(input())
-    
-    if curr+m > 0 :
-        curr+=m 
-print(curr)
+    If money+m>=0: money += m
+
+print(money)
 '''
 
