@@ -6,7 +6,13 @@ Created on Mon Nov 30 18:51:10 2020
 @author: jihye
 """
 
-from typing import ListNode
+from typing import List
+
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
 class MyCircularDeque:
     
     # 초기화 : 오왼 인덱스 정의 : head/tail, 최대 길이 정보 : k, 길이정보 : len
@@ -31,7 +37,7 @@ class MyCircularDeque:
         n.left = node 
     
     # 데크 처음에 아이템을 추가하고 성공할 경우 true 리턴  
-    from typing import ListNode
+
     def insertFront(self, value : int) -> bool:
         if self.len == self.k : 
             return False
@@ -85,8 +91,7 @@ class MyCircularDeque:
     def isFull(self) -> bool :
         return self.len == self.k
     
-    
-    def 
+
     
     
         
