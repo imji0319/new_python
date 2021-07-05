@@ -19,7 +19,6 @@ solution('111',3) -> 3
 
 # 연속된 값 최대값 세기
 def listCount(li):
-
     maxs = 0
     for i in range(len(li)):
         n = 0
@@ -73,11 +72,19 @@ def solution(binString : str, k : int) -> int :
     ind0 = [i for i in range(len(ori)) if ori[i] == "0"]
     ind1 = [i for i in range(len(ori)) if ori[i] == "1"]
 
+    if len(ind0) > len(ind1):   # 기존 0의 개수가 많을 경우 1을 0으로 바꾸는게 더 유리
+        com0 = com(ori, 0, ind1, k)
+        return com0
+    
+    elif len(ind0) < len(ind1):  # 기존 1의 개수가 더 많을 경우 0을 1로 바꾸는 방법
+        com1 = com(ori, 1 , ind0, k )
+        return com1
 
-    com0 = com(ori, 1, ind0, k)   # 0 -> 1
-    com1 = com(ori, 0, ind1, k )  # 1 -> 0
+    else :                       # 0의 개수와 1의 개수가 동일한 경우 두 경우 모두 비교 
+        com0 = com(ori, 1, ind0, k)   # 0 -> 1
+        com1 = com(ori, 0, ind1, k )  # 1 -> 0
 
-    return max(com0, com1)
+        return max(com0, com1)
 
 
 
@@ -86,9 +93,11 @@ print(solution('011010010', 4 )) # 000000000 : 9
 print(solution('111010001', 3 )) # 111111101 : 7
 print(solution('111',3))         # 111 : 3
 print(solution('10100',2))       # 00000 : 5
-print(solution('00011110001000101001', 5)) # 00000000000000101001 : 13
+print(solution('00011110001000101001', 5)) # 00000000000000101001 : 14
 print(solution('111011101001010101', 3))   # 111111111101010101 : 10
-print(solution('11100',3))  # 11111 : 5
+print(solution('11100',3))       # 11111 : 5
+print(solution('1010101010',2))  # 1000001010 : 5
+print(solution('111000',2))      # 111110 / 100000  : 5 
 
 
 
