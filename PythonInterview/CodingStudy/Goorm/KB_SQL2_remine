@@ -1,0 +1,22 @@
+
+###### TABLE SHOP
+###### SALES
+###### PAYMENT_METHOD
+### shop_name, 결제방법, 결제방법별 총 결제액
+
+With sale_m as
+    ( select * from sales left join payment_method on ( sales.sales_method = payment_method.id)
+
+
+Select COALESCE(shop_name,'총합계'), CASE
+                                    WHEN TYPE is null and shop_name <> '총합계' THEN "합계"
+                                    ELSE "-",
+                                  CASE
+                                    when shop.거래타입 =“s” then sum(floor(sale_m.거래액 - sale_m.거래액*0.015)
+                                    else sum(floor(sale_m.거래액 -sale_m.거래액*0.03)
+
+From sale_m left join shop on ( sale_m.shop_name= shop.seq)
+Where sale_m. payment_method <> 3 and ( isnull(is_cash_receipt_send) or is_cash_receipt_send = “Y”)
+Group by sale_m.shop_name, Type with ROLLUP
+
+
