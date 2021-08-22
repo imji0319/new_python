@@ -6,3 +6,5 @@ def solution(s):
         answer += i
 
     return answer
+
+
