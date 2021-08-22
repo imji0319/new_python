@@ -1,7 +1,5 @@
 import numpy as np
 def sliceP(emptyboard, spece):
-    answer = -1
-
     board = np.array(emptyboard)
     sp = np.array(spece)
     #print(sp)
@@ -29,7 +27,7 @@ def sliceP(emptyboard, spece):
             if np.array_equal(ss, sp):
                 board[i:i+len(sp[0]), j:j+len(sp[0])] = 0
 
-    print(board)
+    return board
 
 
 
