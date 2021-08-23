@@ -5,17 +5,23 @@ def sP(board, sp):
 
     #print(sp, len(sp), len(sp[0]), len(sp[1]))
     # board : array, sp: array
+
+    one = True # 조각 1번씩만 처리
     for i in range(len(board)-len(sp)+1):
         for j in range(len(board[0])-len(sp[0])+1):
             ss = board[i:i+len(sp), j:j+len(sp[0])]
             if np.array_equal(ss, sp):
-
                 # 근접 index 전부 처리
                 board[i:i+len(sp), j:j+len(sp[0])] = 0
                 board[i:i+len(sp), j-1:j+len(sp[0])]=0
                 board[i:i+len(sp), j:j + len(sp[0])+1]=0
                 board[i:i+len(sp)+1, j:j +len(sp[0])]=0
                 board[i-1:i+len(sp), j:j+len(sp[0])]=0
+                one = False
+                break
+
+        if one == False:
+            break
 
     return board
 
@@ -57,7 +63,8 @@ spece = [[[0, 1, 0],
          [0, 1, 0],
          [1, 1, 1]],
          [[1],
-          [1],
+          [1]],
+         [[1],
           [1]]]
 
 
