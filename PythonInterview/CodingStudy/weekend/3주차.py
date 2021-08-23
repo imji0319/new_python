@@ -46,9 +46,8 @@ def solution(game_board, table):
 
         return jos
 
-    gm = bb(game_board,0)
+    #gm = bb(game_board,0)
     ta = bb(table, 1)
-
 
 
     #조각이 들어오면 0,0을 기준으로 패턴의 위치를 변경하고, 회전했을 때의 가능한 모든 조각 패턴 리턴

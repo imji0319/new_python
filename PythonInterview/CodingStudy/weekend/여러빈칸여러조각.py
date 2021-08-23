@@ -1,6 +1,6 @@
 import numpy as np
 
-# 조각 맞추기 -> return board
+# 조각 맞추기
 def sP(board, sp):
 
     #print(sp, len(sp), len(sp[0]), len(sp[1]))
@@ -9,12 +9,20 @@ def sP(board, sp):
         for j in range(len(board[0])-len(sp[0])+1):
             ss = board[i:i+len(sp), j:j+len(sp[0])]
             if np.array_equal(ss, sp):
-                #print(ss)
+
+                # 근접 index 전부 처리
                 board[i:i+len(sp), j:j+len(sp[0])] = 0
+                board[i:i+len(sp), j-1:j+len(sp[0])]=0
+                board[i:i+len(sp), j:j + len(sp[0])+1]=0
+                board[i:i+len(sp)+1, j:j +len(sp[0])]=0
+                board[i-1:i+len(sp), j:j+len(sp[0])]=0
 
     return board
 
-# 빈칸에 여러 조각 넣기 -> return board
+
+# 여러 조각 넣기
+# 빈칸에 여러 개의 조각이 들어갈 수 있는 경우
+# 단 조각이 근처에 붙어 있을 수 없음.
 def sols(board, speces):
     answer = -1
     speces = [np.array(x) for x in speces]
@@ -31,8 +39,29 @@ def sols(board, speces):
     return board
 
 
-
 # 여러 빈칸을 여러 조각으로 채우기
 # 가장 큰 빈칸에 가장 큰 조각부터 넣기
+def FirstBigSize(emptyboard, speces):
+    answer = sols(emptyboard, speces)
+
+    return answer
+
+
+
+emptyboard = [[1,0,0,1,0],
+              [1,0,0,1,0],
+              [0,1,1,1,1],
+              [0,1,0,0,0],
+              [0,1,0,0,0]]
+spece = [[[0, 1, 0],
+         [0, 1, 0],
+         [1, 1, 1]],
+         [[1],
+          [1],
+          [1]]]
+
+
+
+print(FirstBigSize(emptyboard, spece))
 
 
