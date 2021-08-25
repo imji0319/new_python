@@ -30,7 +30,6 @@ def sP(board, sp):
 # 빈칸에 여러 개의 조각이 들어갈 수 있는 경우
 # 단 조각이 근처에 붙어 있을 수 없음.
 def sols(board, speces):
-    answer = -1
     speces = [np.array(x) for x in speces]
     board = np.array(board)
 
