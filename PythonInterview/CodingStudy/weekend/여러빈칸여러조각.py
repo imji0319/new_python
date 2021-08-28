@@ -2,27 +2,47 @@ import numpy as np
 
 # 조각 맞추기
 def sP(board, sp):
-
+    print('NEW')
     #print(sp, len(sp), len(sp[0]), len(sp[1]))
     # board : array, sp: array
 
-    one = True # 조각 1번씩만 처리
+    one = True
     for i in range(len(board)-len(sp)+1):
         for j in range(len(board[0])-len(sp[0])+1):
             ss = board[i:i+len(sp), j:j+len(sp[0])]
+            #print(i,j,'------')
+            #print(ss)
+
+            test = True
             if np.array_equal(ss, sp):
-                # 근접 index 전부 처리
-                board[i:i+len(sp), j:j+len(sp[0])] = 0
-                board[i:i+len(sp), j-1:j+len(sp[0])]=0
-                board[i:i+len(sp), j:j + len(sp[0])+1]=0
-                board[i:i+len(sp)+1, j:j +len(sp[0])]=0
-                board[i-1:i+len(sp), j:j+len(sp[0])]=0
-                one = False
-                break
+                print(sp)
+                if i + len(sp) < len(board) and j > 0 :
+                    # 왼쪽
+                    if board[i:i+len(sp), j-1].any() != 0 :
+                        test = False
+                if j + len(sp[0]) <= len(board[0]) and i + len(sp) < len(board):
+                    # 아래
+                    if board[i+len(sp), j:j+len(sp[0])].any() != 0:
+                        test = False
+                if j + len(sp[0]) < len(board[0]) and i + len(sp) < len(board):
+                    # 오른쪽
+                    if board[i:i+len(sp),j+len(sp[0])].any() != 0:
+                        test = False
+
+                if j + len(sp[0]) < len(board[0]) and i > 0:
+                    # 위
+                    if board[i - 1, j:j + len(sp[0])].any() != 0 :
+                        test = False
+
+                if test:
+                    board[i:i+len(sp), j:j+len(sp[0])] = 0
+                    one = False
+                    break
 
         if one == False:
             break
 
+    #print(board)
     return board
 
 
@@ -44,8 +64,6 @@ def sols(board, speces):
     return board
 
 
-# 여러 빈칸을 여러 조각으로 채우기
-# 가장 큰 빈칸에 가장 큰 조각부터 넣기
 def FirstBigSize(emptyboard, speces):
     answer = sols(emptyboard, speces)
 
