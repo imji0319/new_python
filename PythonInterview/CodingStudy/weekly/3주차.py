@@ -52,11 +52,9 @@ def solution(game_board, table):
                 game_board[i][j] = 1
             else:
                 game_board[i][j] = 0
-
     #print(game_board)
 
     ta = bb(table, 1)
-    #print(ta)
 
     # 조각 인덱스 -> 조각 배열 반환
     def sol(sp):
@@ -138,7 +136,7 @@ def solution(game_board, table):
 
     def rota_list(board, spss):
 
-        speces = [np.array(x) for x in spss]
+        speces = [np.array(x, dtype = 'int') for x in spss]
         # print(speces)
         board = np.array(board)
 
@@ -146,17 +144,20 @@ def solution(game_board, table):
 
         for i in speces:
             ro_list = rotation(i)
-            # print(ro_list)
+
+            #print(ro_list)
             for j in ro_list:
                 board = sP(board, j)
 
         return board
 
-    before = np.array(game_board)
+
 
     #print(sp_list)
     after = rota_list(game_board, sp_list)
-    print(before - after)
+    #print(np.array(game_board))
+    #print(after)
+    answer = (np.array(game_board) - after).sum()
 
     return answer
 
