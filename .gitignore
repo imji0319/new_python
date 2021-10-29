@@ -7,6 +7,9 @@
 *.tsv
 *.h5
 *.npy
+*.json
+*.ini
+
 
 
 
