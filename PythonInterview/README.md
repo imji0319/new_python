@@ -9,14 +9,14 @@ LeefCode 에서가 아닌 로컬에서 코드 작업을 하기 위해 모듈을 
 ------------
 
 __문자열 조작__
-1. [유효한 펠린드롬](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/Palindrome.py)
-2. [문자열 뒤집기](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/ReverseString.py)
-3. [로그 파일 재정렬](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/ReorderLogFiles.py) 
-4. [가장 흔한 단어](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/MostCommonWord.py) 
-5. [그룹 애너그램](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/GroupAnagrams.py) 
-6. [가장 긴 팰린드롬 부분 문자열](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/LongestPalindromeSubstring.py)
+1. [유효한 펠린드롬](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/문자열조작/Palindrome.py)
+2. [문자열 뒤집기](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/문자열조작/ReverseString.py)
+3. [로그 파일 재정렬](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/문자열조작/ReorderLogFiles.py) 
+4. [가장 흔한 단어](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/문자열조작/MostCommonWord.py) 
+5. [그룹 애너그램](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/문자열조작/GroupAnagrams.py) 
+6. [가장 긴 팰린드롬 부분 문자열](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/문자열조작/LongestPalindromeSubstring.py)
 
-[여러가지 정렬 방법](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/variableSortingMethod.ipynb)
+[여러가지 정렬 방법](https://github.com/imji0319/new_python/blob/master/PythonInterview/codingProblem/문자열조작/variableSortingMethod.ipynb)
 
 ------------
 
