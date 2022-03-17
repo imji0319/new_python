@@ -11,6 +11,8 @@
 *.ini
 *.pdf
 *.xhml
+*.txt
+*.pkl
 
 
 
