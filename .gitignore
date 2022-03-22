@@ -14,12 +14,15 @@
 *.txt
 *.pkl
 
+# 크롬 드라이버 제외 
+chromedriver
 
-
+# doc2vec 모델 제외 
+Recommendation/Company_recommendation/business_report_doc2vec_model
 
 #해당 폴더 제외
 event/
 
-#
 
+#
 /DS_Series/DS_ML_guide/data/creditcard.csv
